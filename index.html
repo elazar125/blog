@@ -11,23 +11,87 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
+  <meta property="og:image:alt" content="{{ .ImageAlt }}">
+  <meta property="og:description" content="{{ .Description }}">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <meta name="color-scheme" content="dark light">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <header>
+    <div id="header-content">
+      <a id="logo" href="/">Ezra's Blog</a>
 
+      <nav aria-label="primary">
+        <ul>
+          <li><a href="/" aria-current="page">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="https://github.com/elazar125">Code</a></li>
+        </ul>
+      </nav>
+    </div>
+    <svg aria-hidden="true" height="0" width="0">
+      <filter id='roughpaper' x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency='0.03' result='noise' numOctaves="5" />
+        <feDiffuseLighting in='noise' lighting-color='rebeccapurple' surfaceScale='2'>
+          <feDistantLight azimuth='45' elevation='30' />
+        </feDiffuseLighting>
+      </filter>
+    </svg>
+  </header>
+
+  <main>
+    <h1>Title of the Article</h1>
+
+    <p>Voluptas eveniet eius quam ex. Rerum assumenda vero in. Molestiae totam eos exercitationem asperiores ut.</p>
+
+    <p>Qui sunt itaque placeat nulla. <a href="#">Explicabo sunt accusamus quos.</a> Voluptates corporis autem itaque.
+      Quae vitae
+      accusamus qui aut esse eveniet non. Et molestiae ratione ut.</p>
+
+    <h2>A subtitle</h2>
+
+    <p>Perferendis voluptates sequi magnam rerum. Saepe sed provident quia velit. Sequi quis eligendi enim earum quia.
+      Perspiciatis sequi quas aut harum ut. Odio deleniti ipsam qui eligendi dolorem dolor esse porro.</p>
+
+    <p>Eos pariatur laborum sed. Nam inventore ut explicabo. Eum voluptas eaque esse id sequi quae. Necessitatibus non
+      ullam nobis in. Nostrum earum debitis non ea nemo doloremque quia. Consectetur doloremque delectus molestiae.</p>
+
+    <p>Ut sunt sunt odit beatae ullam laudantium ducimus. Nisi consectetur totam qui. Sit consequatur ipsum recusandae
+      est sit beatae. Aliquam maxime quod at ipsam sed et quis. Et nesciunt minus nulla.</p>
+
+    <h2>Another subtitle</h2>
+
+    <p>Perferendis voluptates sequi magnam rerum. Saepe sed provident quia velit. Sequi quis eligendi enim earum quia.
+      Perspiciatis sequi quas aut harum ut. Odio deleniti ipsam qui eligendi dolorem dolor esse porro.</p>
+
+    <h3>An h3 level title</h3>
+
+    <p>Eos pariatur laborum sed. Nam inventore ut explicabo. Eum voluptas eaque esse id sequi quae. Necessitatibus
+      non
+      ullam nobis in. Nostrum earum debitis non ea nemo doloremque quia. Consectetur doloremque delectus molestiae.
+    </p>
+
+    <p>Ut sunt sunt odit beatae ullam laudantium ducimus. Nisi consectetur totam qui. Sit consequatur ipsum
+      recusandae
+      est sit beatae. Aliquam maxime quod at ipsam sed et quis. Et nesciunt minus nulla.</p>
+
+  </main>
+
+  <footer>
+    CC-BY-SA Ezra Lazar
+  </footer>
 </body>
 
 </html>
