@@ -2,6 +2,11 @@
 /* Basic Layout                                       */
 /******************************************************/
 
+@font-face {
+  font-family: 'gabriele';
+  src: url(/fonts/gabriele-l.woff2) format('woff2');
+}
+
 :root {
   background-color: #080713;
   color: #fbfbfe;
@@ -36,6 +41,7 @@ header {
   box-shadow: aqua 0 0 5px 3px, black 0 0 15px 4px;
   position: relative;
   isolation: isolate;
+  overflow-x: hidden;
 }
 
 header::before {
@@ -52,27 +58,32 @@ header #header-content {
 }
 
 nav[aria-label="primary"] ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
+  padding-inline-start: 0;
+  margin-block: 0;
+}
+
+nav[aria-label="primary"] li {
+  display: inline-block;
 }
 
 header #logo {
-  margin-inline-start: -2rem;
+  margin-inline-start: clamp(-2rem, -1rem - 1vw, -1rem);
 }
 
 header nav {
-  margin-inline-end: -2rem;
+  margin-inline-end: clamp(-2rem, -1rem - 1vw, -1rem);
 }
 
 header a,
 header a:visited,
 header a:hover {
-  font-family: "Gabriele Light Ribbon FG";
+  font-family: "gabriele";
   text-decoration: none;
   color: aqua;
   font-size: 1.2rem;
-  padding: 1rem 2rem;
+  padding-block: 1rem;
+  padding-inline: clamp(1rem, 1rem + 1vw, 2rem);
+  display: inline-block;
 }
 
 header a:hover {
@@ -86,6 +97,11 @@ header a:focus-visible {
   outline-offset: -1rem;
 }
 
+header img {
+  margin-block: 1rem;
+  block-size: 1.8rem;
+}
+
 /******************************************************/
 /* Content                                            */
 /******************************************************/
@@ -93,14 +109,14 @@ header a:focus-visible {
 /****** Headings ******/
 
 h1 {
-  font-family: "Gabriele Light Ribbon FG";
+  font-family: "gabriele";
   color: khaki;
 }
 
 h2,
 h3,
 h4 {
-  font-family: "Gabriele Light Ribbon FG";
+  font-family: "gabriele";
   color: deeppink;
 }
 
@@ -126,6 +142,17 @@ a:focus-visible {
   outline-color: deeppink;
   outline-width: 2px;
   outline-offset: 2px;
+}
+
+/****** Horizontal Rules ******/
+
+hr {
+  border: 0;
+  background-image: url("/img/hr.svg");
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /****** Fun hand animation ******/
