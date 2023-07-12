@@ -155,6 +155,54 @@ hr {
   background-position: center;
 }
 
+/****** Code Blocks ******/
+
+pre[data-lang] {
+  background-color: #050506 !important;
+  padding: 1rem;
+  margin-inline: -1rem;
+  margin-block: calc(1em + 20px);
+  position: relative;
+  tab-size: 2;
+}
+
+pre[data-lang]::before,
+pre[data-lang]::after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+pre[data-lang]::before {
+  inset: -20px 0 0;
+  background-image: url("/img/hr-top.svg");
+}
+
+pre[data-lang]::after {
+  inset: 100% 0 calc(100% + 20px);
+  background-image: url("/img/hr-top.svg");
+  transform: rotate(180deg);
+}
+
+code {
+  font-family: "gabriele";
+}
+
+code[data-lang] {
+  overflow-x: auto;
+  display: block;
+}
+
+/****** Footnotes ******/
+
+.footnote-definition {
+  display: flex;
+  gap: 1rem;
+}
+
 /****** Fun hand animation ******/
 
 @media(prefers-reduced-motion: no-preference) {
