@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-CA">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% block header %}{% endblock %}
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="color-scheme" content="dark">
+</head>
+
+<body>
+
+  <header>
+    <div id="header-content">
+      <a id="logo" href="/">Ezra's Site</a>
+
+      <img src="/img/bird.svg" alt="" />
+
+      <nav aria-label="primary">
+        <ul>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="https://github.com/elazar125">Code</a></li>
+        </ul>
+      </nav>
+    </div>
+    <svg aria-hidden="true" height="0" width="0">
+      <filter id='roughpaper' x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency='0.03' result='noise' numOctaves="5" />
+        <feDiffuseLighting in='noise' lighting-color='rebeccapurple' surfaceScale='2'>
+          <feDistantLight azimuth='45' elevation='30' />
+        </feDiffuseLighting>
+      </filter>
+    </svg>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    CC-BY-SA Ezra Lazar
+  </footer>
+</body>
+
+</html>

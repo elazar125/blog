@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block header %}
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.permalink }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta name="twitter:card" content="summary_large_image">
+{% endblock header %}
+
+{% block unused %}
+<meta property="og:image" content="{{ page.title }}">
+<meta property="og:image:alt" content="{{ page.title }}">
+{% endblock unused %}
+
+{% block content %}
+{{ page.content | safe }}
+{% endblock content %}
