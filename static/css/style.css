@@ -4,12 +4,18 @@
 
 @font-face {
   font-family: 'gabriele';
-  src: url(/fonts/gabriele-l.woff2) format('woff2');
+  src: url('/fonts/gabriele.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'foglihten';
+  src: url('/fonts/Foglihten.woff2') format('woff2');
 }
 
 :root {
   background-color: #080713;
   color: #fbfbfe;
+  font-family: 'foglihten';
 }
 
 body {
@@ -77,7 +83,7 @@ header nav {
 header a,
 header a:visited,
 header a:hover {
-  font-family: "gabriele";
+  font-family: 'gabriele';
   text-decoration: none;
   color: aqua;
   font-size: 1.2rem;
@@ -109,14 +115,14 @@ header img {
 /****** Headings ******/
 
 h1 {
-  font-family: "gabriele";
+  font-family: 'gabriele';
   color: khaki;
 }
 
 h2,
 h3,
 h4 {
-  font-family: "gabriele";
+  font-family: 'gabriele';
   color: deeppink;
 }
 
@@ -148,7 +154,7 @@ a:focus-visible {
 
 hr {
   border: 0;
-  background-image: url("/img/hr.svg");
+  background-image: url('/img/hr.svg');
   height: 20px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -178,17 +184,17 @@ pre[data-lang]::after {
 
 pre[data-lang]::before {
   inset: -20px 0 0;
-  background-image: url("/img/hr-top.svg");
+  background-image: url('/img/hr-top.svg');
 }
 
 pre[data-lang]::after {
   inset: 100% 0 calc(100% + 20px);
-  background-image: url("/img/hr-top.svg");
+  background-image: url('/img/hr-top.svg');
   transform: rotate(180deg);
 }
 
 code {
-  font-family: "gabriele";
+  font-family: 'gabriele';
 }
 
 code[data-lang] {
@@ -203,13 +209,17 @@ code[data-lang] {
   gap: 1rem;
 }
 
+.footnote-reference {
+  padding-inline: 3px;
+}
+
 /****** Fun hand animation ******/
 
 @media(prefers-reduced-motion: no-preference) {
   a::after {
     content: '';
     position: absolute;
-    background-image: url("/img/hand.avif");
+    background-image: url('/img/hand.avif');
     display: inline-block;
     aspect-ratio: 2;
     background-size: contain;
