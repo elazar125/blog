@@ -150,6 +150,22 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
+/****** Cards ******/
+
+.card-list {
+  list-style: none;
+  padding-inline: 0;
+}
+
+.card-list>*+* {
+  margin-block-start: 1em;
+}
+
+.card {
+  text-decoration: none;
+  display: block;
+}
+
 /****** Horizontal Rules ******/
 
 hr {

@@ -16,5 +16,16 @@
 {% endblock unused %}
 
 {% block content %}
-{{ section.content | safe }}
+<h1>{{ section.title }}</h1>
+<ul class="card-list">
+  {% for page in section.pages %}
+  <li>
+    <a class="card" href="{{ page.permalink | safe }}">
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.description }}</p>
+      <p>{{ page.date }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
 {% endblock content %}
