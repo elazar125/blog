@@ -43,7 +43,7 @@ main>* {
 /******************************************************/
 
 header {
-  background-color: rebeccapurple;
+  background-color: #341a4e;
   box-shadow: aqua 0 0 5px 3px, black 0 0 15px 4px;
   position: relative;
   isolation: isolate;
@@ -227,6 +227,21 @@ code[data-lang] {
 
 .footnote-reference {
   padding-inline: 3px;
+}
+
+/****** Asides ******/
+
+aside {
+  background: #030206;
+  padding: 1rem;
+  margin-block-start: 2rem;
+  border-inline-start-style: solid;
+  border-inline-start-color: aqua;
+  border-inline-start-width: 5px;
+}
+
+aside>*+* {
+  margin-block-start: 1em;
 }
 
 /****** Fun hand animation ******/

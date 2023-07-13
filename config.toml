@@ -2,6 +2,8 @@ base_url = "https://example.com"
 generate_feed = true
 title = "Ezra's Site"
 description = ""
+author = "Ezra Lazar"
+default_language = "en_CA"
 
 [markdown]
 highlight_code = true
