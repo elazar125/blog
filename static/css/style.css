@@ -293,6 +293,12 @@ code[data-lang] {
 
 footer {
   padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  max-block-size: 1.5rem;
 }
 
 /******************************************************/
