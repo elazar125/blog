@@ -16,6 +16,8 @@ description = "A big thanks to the following people for resources I've swiped"
 
 ## Boilerplate code
 - [HTML5 Boilerplate](https://html5boilerplate.com/) [[MIT](https://github.com/h5bp/html5-boilerplate/blob/main/LICENSE.txt)]
+- [Andy Bell's CSS Reset](https://github.com/Andy-set-studio/modern-css-reset) [[MIT](https://github.com/Andy-set-studio/modern-css-reset/blob/master/LICENSE)]
+- [Darek Kay's RSS Style](https://darekkay.com/blog/rss-styling/)
 
 ## Static Site Generator
 - [Zola](https://www.getzola.org/)
