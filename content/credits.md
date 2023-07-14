@@ -1,10 +1,7 @@
 +++
 title = "Credits"
+description = "A big thanks to the following people for resources I've swiped"
 +++
-
-# Credits
-
-A big thanks to the following people for resources I've swiped -
 
 ## Images
 - Bird icon: [SVG Silh](https://svgsilh.com/image/1653866.html) [[CC0](https://creativecommons.org/publicdomain/zero/1.0/)]

@@ -16,5 +16,7 @@
 {% endblock unused %}
 
 {% block content %}
+<h1>{{ page.title }}</h1>
+<p>{{ page.description }}</p>
 {{ page.content | safe }}
 {% endblock content %}
