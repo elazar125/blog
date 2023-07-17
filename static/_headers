@@ -2,4 +2,5 @@
   Content-Security-Policy: default-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
   X-Content-Type-Options: nosniff
   X-Frane-Options: DENY
+  Referrer-Policy: no-referrer
   

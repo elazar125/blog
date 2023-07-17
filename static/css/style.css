@@ -4,11 +4,13 @@
 
 @font-face {
   font-family: 'gabriele';
+  font-display: swap;
   src: url('/fonts/GabrieleLightRibbonFG.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'foglihten';
+  font-display: swap;
   src: url('/fonts/Foglihten.woff2') format('woff2');
 }
 
