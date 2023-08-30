@@ -9,15 +9,15 @@
 }
 
 @font-face {
-  font-family: 'foglihten';
+  font-family: 'josefin';
   font-display: swap;
-  src: url('/fonts/Foglihten.woff2') format('woff2');
+  src: url('/fonts/JosefinSans-Regular.woff2') format('woff2');
 }
 
 :root {
   background-color: #080713;
   color: #fbfbfe;
-  font-family: 'foglihten';
+  font-family: 'josefin';
 }
 
 body {
