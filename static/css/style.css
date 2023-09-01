@@ -40,6 +40,15 @@ main>* {
   margin-block-start: 1em;
 }
 
+/* mess with font sizes because josefin is too small */
+p {
+  font-size: 1.1rem;
+}
+
+p > code {
+  font-size: 1rem;
+}
+
 /******************************************************/
 /* Header                                             */
 /******************************************************/

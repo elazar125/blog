@@ -12,7 +12,7 @@ description = "A big thanks to the following people for resources I've swiped"
 
 ## Fonts
 - Gabriele Light Ribbon FG: [FontGrube AH](https://www.dafont.com/gabriele-ribbon-fg.font) [[License](/fonts/Gabriele_License.txt)]
-- Foglihten: [Gluk](https://www.dafont.com/foglihten.font) [[OFL](/fonts/OFL_License.txt)]
+- Josefin Sans: [Santiago Orozco](https://www.1001freefonts.com/josefin-sans.font) [[OFL](/fonts/OFL.txt)]
 
 ## Boilerplate code
 - [HTML5 Boilerplate](https://html5boilerplate.com/) [[MIT](https://github.com/h5bp/html5-boilerplate/blob/main/LICENSE.txt)]

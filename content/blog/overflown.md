@@ -44,6 +44,7 @@ Some lorem ipsum...
   max-height: 100px;
   max-width: 500px;
 ">
+
 Here's some content that's too long and scrolls
 
 And a picture of a bike that should be positioned absolute to the right of this text
@@ -59,6 +60,7 @@ Commodi provident doloribus dolorem nobis voluptatem beatae pariatur. Sit dignis
 Adipisci totam rerum corrupti. Dolores repellat provident incidunt omnis eligendi quo excepturi illum. Doloremque architecto ut ab nobis veritatis sint asperiores sint.
 
 Perferendis sint unde harum exercitationem culpa dolor praesentium error. Aliquid aperiam eum aut quaerat. Non aspernatur quam ut qui quia. Quam illum odit rerum cumque.
+
   <img src="/img/bike.avif" style="
     height: 200px;
     max-width: fit-content; /* Needed to override my site's styles */
@@ -107,6 +109,7 @@ Some Lorem ipsum...
     max-height: 100px;
     max-width: 500px;
   ">
+
 Here's some content that's too long and scrolls
 
 And a picture of a bike that should be positioned absolute to the right of this text
@@ -122,7 +125,8 @@ Commodi provident doloribus dolorem nobis voluptatem beatae pariatur. Sit dignis
 Adipisci totam rerum corrupti. Dolores repellat provident incidunt omnis eligendi quo excepturi illum. Doloremque architecto ut ab nobis veritatis sint asperiores sint.
 
 Perferendis sint unde harum exercitationem culpa dolor praesentium error. Aliquid aperiam eum aut quaerat. Non aspernatur quam ut qui quia. Quam illum odit rerum cumque.
-    <img src="/img/bike.avif" style="
+
+  <img src="/img/bike.avif" style="
       height: 200px;
       max-width: fit-content; /* Needed to override my site's styles */
       position: absolute;
@@ -214,8 +218,10 @@ I think my explanation is too confusing, here's code instead:
     <div style="
       position: relative;
     ">
+
   I really want the bike to be positioned based on this inner div
-      <img src="/img/bike.avif" style="
+
+  <img src="/img/bike.avif" style="
         height: 200px;
         max-width: fit-content; /* Needed to override my site's styles */
         position: absolute;
@@ -226,7 +232,7 @@ I think my explanation is too confusing, here's code instead:
   </div>
 </div>
 
-Because the inner div is entirely withing the scrolling div, everything gets scrolled.
+Because the inner div is entirely within the scrolling div, everything gets scrolled.
 
 I'm encountering this version of the problem in the header on this site. If you hover over a link, a hand will pop up. I have the header constrained by `overflow-x: hidden` because I can't figure out sizing my buttons well for small screens. I need the links to be `position: relative` so the hand moves relative to the link, not to the side of the header. As the link is within the header, the hand stays within the header, and it all gets affected by the overflow logic.
 
