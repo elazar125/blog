@@ -26,26 +26,16 @@
 <body>
 
   <header>
-    <div id="header-content">
-      <a id="logo" href="/">Ezra's Site</a>
+    <a id="logo" href="/">Ezra's Site</a>
 
-      <img src="/img/bird.svg" alt="" height="28.8px" width="19px" />
+    <img src="/img/bird.svg" alt="" height="28.8px" width="19px" />
 
-      <nav aria-label="primary">
-        <ul>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="https://github.com/elazar125">Code</a></li>
-        </ul>
-      </nav>
-    </div>
-    <svg aria-hidden="true" height="0" width="0">
-      <filter id='roughpaper' x="0%" y="0%" width="100%" height="100%">
-        <feTurbulence type="fractalNoise" baseFrequency='0.03' result='noise' numOctaves="5" />
-        <feDiffuseLighting in='noise' lighting-color='rebeccapurple' surfaceScale='2'>
-          <feDistantLight azimuth='45' elevation='30' />
-        </feDiffuseLighting>
-      </filter>
-    </svg>
+    <nav aria-label="primary">
+      <ul>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://github.com/elazar125">Code</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -57,6 +47,15 @@
     <a href="/credits">Credits</a>
     <a href="/atom.xml"><img src="/img/rss.avif" alt="RSS Feed" height="24px" width="24px" /></a>
   </footer>
+
+  <svg aria-hidden="true" height="0" width="0">
+    <filter id='roughpaper' x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency='0.03' result='noise' numOctaves="5" />
+      <feDiffuseLighting in='noise' lighting-color='rebeccapurple' surfaceScale='2'>
+        <feDistantLight azimuth='45' elevation='30' />
+      </feDiffuseLighting>
+    </filter>
+  </svg>
 </body>
 
 </html>

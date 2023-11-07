@@ -17,7 +17,7 @@
 :root {
   background-color: #080713;
   color: #fbfbfe;
-  font-family: 'josefin';
+  font-family: 'josefin', sans-serif;
 }
 
 body {
@@ -25,7 +25,6 @@ body {
   flex-direction: column;
 }
 
-header #header-content,
 main,
 footer {
   width: min(65ch, 100vw - 2rem);
@@ -45,6 +44,10 @@ p {
   font-size: 1.1rem;
 }
 
+ul {
+  font-size: 1.1rem;
+}
+
 p > code {
   font-size: 1rem;
 }
@@ -59,6 +62,12 @@ header {
   position: relative;
   isolation: isolate;
   overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr min(65ch, 100vw - 2rem) 1fr;
+}
+
+header > * {
+  grid-column: 2/3;
 }
 
 header::before {
@@ -67,11 +76,6 @@ header::before {
   inset: 0;
   z-index: -1;
   filter: url(#roughpaper);
-}
-
-header #header-content {
-  display: flex;
-  justify-content: space-between;
 }
 
 nav[aria-label="primary"] ul {
@@ -84,17 +88,25 @@ nav[aria-label="primary"] li {
 }
 
 header #logo {
+  position: absolute;
+  inset-inline-start: 0;
   margin-inline-start: clamp(-2rem, -1rem - 1vw, -1rem);
 }
 
 header nav {
+  position: absolute;
+  inset-inline-end: 0;
   margin-inline-end: clamp(-2rem, -1rem - 1vw, -1rem);
+}
+
+header img {
+  margin-inline: auto;
 }
 
 header a,
 header a:visited,
 header a:hover {
-  font-family: 'gabriele';
+  font-family: 'gabriele', monospace;
   text-decoration: none;
   color: aqua;
   font-size: 1.2rem;
@@ -126,14 +138,14 @@ header img {
 /****** Headings ******/
 
 h1 {
-  font-family: 'gabriele';
+  font-family: 'gabriele', monospace;
   color: khaki;
 }
 
 h2,
 h3,
 h4 {
-  font-family: 'gabriele';
+  font-family: 'gabriele', monospace;
   color: deeppink;
 }
 
@@ -200,29 +212,8 @@ pre[data-lang] {
   tab-size: 2;
 }
 
-pre[data-lang]::before,
-pre[data-lang]::after {
-  content: '';
-  position: absolute;
-  height: 20px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-pre[data-lang]::before {
-  inset: -20px 0 0;
-  background-image: url('/img/hr-top.svg');
-}
-
-pre[data-lang]::after {
-  inset: 100% 0 calc(100% + 20px);
-  background-image: url('/img/hr-top.svg');
-  transform: rotate(180deg);
-}
-
 code {
-  font-family: 'gabriele';
+  font-family: 'gabriele', monospace;
 }
 
 code[data-lang] {
@@ -254,6 +245,13 @@ aside {
 
 aside>*+* {
   margin-block-start: 1em;
+}
+
+/****** Block Quotes ******/
+
+blockquote {
+  border-inline-start: aqua 5px solid;
+  padding-inline-start: 1rem;
 }
 
 /****** Fun hand animation ******/
